@@ -1,0 +1,271 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    margin: -8px;
+}
+
+/*--левая часть--*/
+
+.card {
+    display: flex;
+    align-items: flex-start;
+    background-image: url(./images/Фон.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #a7a3a3;
+}
+
+.card-left {
+    width: 638px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+img {
+    max-width: 100%;
+}
+
+.card-name {
+    margin: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 75px;
+    text-transform: uppercase;
+    background-color: #121212;
+    color: #fff;
+    text-align: center;
+    padding: 14px
+}
+
+/*--правая часть--*/
+
+.card-right {
+    flex-grow: 1;
+    padding-left: 70px;
+    position: relative;
+    bottom: 40px;
+    margin: 80px;
+}
+
+.name {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 20px;
+    margin-top: 60px;
+}
+
+.city {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    margin: 0 0 50px 0;
+}
+
+.social {
+    list-style: none;
+    margin: 0 0 50px 0;
+    display: flex;
+    padding: 0;
+}
+
+.social-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    margin: 0 0 20px 0;
+}
+
+.stack-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+    flex-wrap: wrap;
+}
+
+.bubble {
+    background: #414141;
+    border-radius: 45px;
+    color: #fff;
+    padding: 14px 55px;
+    margin-bottom: 20px;
+}
+
+.bubble:not(:last-child) {
+    margin-right: 25px;
+}
+
+.about-content {
+    margin-bottom: 50px;
+}
+
+.about-content p {
+    margin: 0 0 20px 0;
+}
+
+.feedback {
+    width: 702px;
+    max-width: 100%;
+}
+
+.feedback-form {
+    display: flex;
+    padding-bottom: 25px;
+}
+
+.form-input {
+    background: #FFFFFF;
+    border: 1px solid #121212;
+    border-radius: 11px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    padding: 14px 16px;
+    width: 338px;
+}
+
+.form-input:not(:last-shild) {
+    margin-right: 25px;
+}
+
+::placeholder {
+    opacity: 1;
+    color: #121212;
+}
+
+:-ms-input-placeholder {
+    color: #121212;
+}
+
+::-ms-input-placeholder {
+    color: #121212;
+}
+
+.feedback-btn {
+    color: #fff;
+    background: #121212;
+    border-radius: 11px;
+    padding: 14px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    width: 100%;
+}
+
+
+
+/*---Запросы---*/
+
+
+@media screen and (max-width: 1565px) {
+
+    .about-content {
+        margin-bottom: 20px;
+    }
+
+    .social,.city {
+        margin: 0 0 30px 0;
+    }
+
+    .stack-list {
+        margin: 0 0 10px 0;
+    }
+
+    .feedback {
+        width: 484px;
+    }
+
+    .form-input {
+        width: 232px;
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .form-input:not(:last-child) {
+        margin-right: 20px;
+    }
+
+    .card-left {
+        width: 373px;
+    }
+
+    .card-name {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .name {
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    .city {
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .about-content {
+        font-size: 20px;
+        line-height: 23px;
+        text-indent: 30px;
+    }
+
+    .feedback-btn {
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    .card-right {
+        padding-left: 45px;
+    }
+
+}
+
+
+@media screen and (max-width: 856px) {
+
+    .card {
+        flex-direction: column;
+        padding: 0 75px;
+    }
+    
+    .card-left {
+        width: 100%;
+    }
+    
+    .feedback {
+        width: 100%;
+    }
+    
+    .form-input {
+        width: calc((100% - 20px)/2)
+    }
+    
+    }
